@@ -1,0 +1,43 @@
+h1 {
+	color: black;
+	text-align:center;
+	font-size: 4em;
+}
+
+img.tree {
+	width:50%;
+	height:200px;
+	margin-left:500px;
+	display:block;
+}
+
+body {
+	background-color: rgb(225, 225, 200);
+}
+
+h3 {
+	text-align: center;
+}
+
+ul {
+	display:inline;
+	list-style-type:none;
+	font-size:1.5em;
+	
+}
+
+ul li {
+	float:left;
+	margin:15px;
+	padding:10px;
+	text-decoration:none;
+}
+
+ul li:hover {
+	background-color:white;
+}
+
+ul li:visited {
+	color: pink;
+	text-decoration:none;
+}

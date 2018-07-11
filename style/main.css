@@ -1,18 +1,32 @@
+body {
+	height:100%;
+	max-width:800px;
+	margin:auto;
+	background-color: rgba(100, 100, 100, 0.1);
+	padding-top:30px;
+	padding-left:50px;
+    padding-right:50px;
+	
+
+}
+
 h1 {
 	color: black;
 	text-align:center;
 	font-size: 4em;
+	margin:auto;
+
 }
 
-img.tree {
-	width:50%;
+img#tree {
+	width:800px;
 	height:200px;
-	margin-left:500px;
 	display:block;
 }
 
-body {
+html {
 	background-color: rgb(225, 225, 200);
+	height:100%;
 }
 
 h3 {
@@ -23,6 +37,7 @@ ul {
 	display:inline;
 	list-style-type:none;
 	font-size:1.5em;
+	width:1000px;
 	
 }
 
@@ -30,14 +45,74 @@ ul li {
 	float:left;
 	margin:15px;
 	padding:10px;
-	text-decoration:none;
 }
 
 ul li:hover {
 	background-color:white;
+	text-decoration:none;
+		cursor:pointer;
+
 }
 
-ul li:visited {
-	color: pink;
+ul li a:visited {
+	color: black;
+	text-decoration:none;
+	background-color:white;
+}
+
+ul li a {
 	text-decoration:none;
 }
+
+footer {
+	text-align:center-left;
+	position:absolute;
+	bottom:0;
+}
+
+#title {
+	width:600px;
+	margin:auto;
+	padding-bottom:40px;
+}
+
+h5 {
+	padding-left:90px;
+	margin-bottom:20px;
+	margin:auto;
+}
+
+main {
+	margin-top:35px;
+	border-top:rgb(0,0,115) 3px solid;
+	margin-bottom:20px;
+
+	width:100%;
+}
+
+
+
+
+
+#btns ul li {
+ list-style-type: none;
+    display: inline-block;
+    background: #999;
+    margin: 0;
+    padding: 3px 10px;
+    color: black;
+    cursor: pointer;
+}
+
+#btns ul li.active {
+	background-color:white;
+}
+
+#btns div {
+    display:none;
+    text-align:center;
+    padding-top: 30px;
+    font-size:2em;
+}
+
+

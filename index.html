@@ -7,7 +7,10 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to Waldron Center</h1>
+    <nav id="title">
+    <h1>Waldron Center</h1>
+	<h5>Brandon Flores | FDREL250 Final project</h5>
+	</nav>
 	
 	<nav id="menu">
 	  <ul>
@@ -19,7 +22,60 @@
 	
   </header>
   <main>
-  <img id="tree" src="image/tree.jpg" alt="Tree of Life" ></img>
+    <img id="tree" src="image/tree.jpg" alt="Tree of Life" ></img>
+    
+	<div id="btns">
+	  <ul>
+        <li class="active" data-divid="div1">God's Love</li>
+        <li  data-divid="div2">Topic 2</li>
+        <li  data-divid="div3">Topic 3</li>
+	  </ul>
+	
+	
+	
+	  <div id="div1" class="panel active">sap</div>
+	  
+	  
+	  <div id="div2" class="panel">Sap2</div>
+	  
+	  
+	  <div id="div3" class="panel">Sap3</div>
+	</div>
+    
+
+	<script src="script/jquery.js"></script>
+	<script>
+	  $(document).ready(function(){
+	  
+	    $('#div2').hide();
+	    $('#div3').hide();
+
+		
+	    $('#btns ul li').on('click', function(){
+		    $('#btns ul li.active').removeClass('active');
+		    $(this).addClass('active');
+		    var divid = $(this).attr('data-divid');
+			
+			$('#btns .panel.active').slideUp(100, function(){
+			    $(this).removeClass('active');
+			    
+				$('#'+divid).slideDown(100, function(){
+				
+				    $(this).addClass('active');    
+				
+				});
+			});
+
+		});
+	
+	 
+
+
+	  
+	  });
+	
+	</script>
+
   
   
   

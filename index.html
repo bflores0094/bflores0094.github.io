@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Waldron Center</title>
   <link rel="stylesheet" href="style/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -13,7 +14,7 @@
 	</nav>
 	
 	<nav id="menu">
-	  <ul>
+	  <ul class="nav">
 	    <li><a href="index.html">Home</a></li>
 	    <li>Lessons</li>
 	    <li>Share a Thought</li>
@@ -25,21 +26,79 @@
     <img id="tree" src="image/tree.jpg" alt="Tree of Life" ></img>
     
 	<div id="btns">
-	  <ul>
-        <li class="active" data-divid="div1">God's Love</li>
-        <li  data-divid="div2">Topic 2</li>
-        <li  data-divid="div3">Topic 3</li>
+
+	  <ul class="nav">
+        <li id="sap1" class="active" data-divid="div1">God's Love</li>
+        <li id="sap2" data-divid="div2">Second Coming</li>
+        <li id="sap3" data-divid="div3">Forgiveness</li>
 	  </ul>
 	
 	
 	
-	  <div id="div1" class="panel active">sap</div>
+	  <div id="div1" class="panel active">
+	    <h2>God's Love</h2>
+		<p>God loves us so much that he sent his only son down to Earth to die for us.
+		   It's an important fact that is often taken for granted. Sometimes we may want
+		   to rebel agaisnt God because life isn't going our way, but it is important to
+		   remember his love for us. He wants what is best for us even if it is not
+		   what we are hoping for. He blesses us this way.</p>
+		 <hr>
+		 <p>Scriptures about his love for us:</p>
+		 <ul>
+		   <li ><a class="smallLi" target="_blank" href="https://www.lds.org/scriptures/ot/deut/7.8?lang=eng#p7">
+			 Deuteronomy 7:8</a></li>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/ot/ps/31.23?lang=eng#p22">
+			 Psalms 31:23</a></li>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/nt/john/3.16?lang=eng#p15">
+			 John 3:16</a></li>
+		 </ul>
+		   
+	  </div>
 	  
 	  
-	  <div id="div2" class="panel">Sap2</div>
+	  <div id="div2" class="panel">
+	  	    <h2>Second Coming</h2>
+		<p>The second coming is an interesting and mysterious topic. Endless generations have
+		tried to predict when it will happen. Others have tried to predict how it will happen.
+		No one knows for sure the details of the second coming. What we do know is that we
+		should prepare ourselves for when it does happen. By making ourselves worthy and 
+	    devoting our lives to God, we will not be caught off guard. Some think that they can do what they 
+		want and then repent at the last second. Unfortunately, since we don't know when the
+		time will be, this would not be a wise choice. Being prepared to be reunited with
+		our Heavenly Father is the only way to be sure he will accept us into his kingdom.</p>
+		 <hr>
+		 <p>Scriptures about the second coming:</p>
+		 <ul>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/nt/matt/16.27?lang=eng#p26">
+			 Matthew 16:27</a></li>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/nt/rev/1.7?lang=eng#p6">
+			 Revelation 1:7</a></li>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/nt/matt/25.1-13">
+			 Matthew 25:1-13</a></li>
+		 </ul>
+	  </div>
 	  
 	  
-	  <div id="div3" class="panel">Sap3</div>
+	  <div id="div3" class="panel">
+	  	  	    <h2>Forgiveness</h2>
+		<p>Forgiving others is not an easy thing to do. we often get caught up on 
+		the actions of others that we forget about the bigger picture. Holding grudges 
+		towards those who have hurt us is not only useless, but it can stop us from 
+		moving on and growing as children of God. The second commandment says, "Thou 
+		shall love thy neighbor". I believe a huge part of showing love for our neighbors 
+		includes offering forgiveness. God forgives us when we do him wrong so it is best 
+		to follow his example forgive as well. </p>
+		 <hr>
+		 <p>Scriptures about forgiveness:</p>
+		 <ul>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/nt/luke/17.3?lang=eng#p2">
+			 Luke 17:3</a></li>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/dc-testament/dc/82.1?lang=eng#p1">
+			 D&C 82:1</a></li>
+		   <li ><a class="smallLi" href="https://www.lds.org/scriptures/nt/matt/6.15?lang=eng#p14">
+			 Matthew 6:15</a></li>
+		 </ul>
+	  </div>
 	</div>
     
 
@@ -49,6 +108,7 @@
 	  
 	    $('#div2').hide();
 	    $('#div3').hide();
+		$('#div1').show();
 
 		
 	    $('#btns ul li').on('click', function(){
@@ -85,5 +145,7 @@
   
   </main>
 
-  <footer>&copy; Brandon Flores 2018 | <a href="https://github.com/bflores0094">Github</a></footer>  
+  <footer>&copy; Brandon Flores 2018 | <a href="https://github.com/bflores0094">Github</a>
+  </footer>  
 </body>
+</html>
